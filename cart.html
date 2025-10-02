@@ -3,83 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop - Bootstrap</title>
-
-  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <title>Kahoy - Products</title>
   <link href="./dist/styles.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">E-Shop</a>
-      <button class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
-        </ul>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand text-white-custom" href="bootstrap.html">
+      <img src="images/kahoy.png" alt="Kahoy Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white-custom" href="bootstrap.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white-custom" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-white-custom" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white-custom" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white-custom active" href="cart.html">🛒 Cart</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>  
+</nav>
 
-  <!-- HERO -->
-  <header class="text-center text-white py-5 bg-dark" style="background:url('https://picsum.photos/1200/400?business') center/cover no-repeat;">
-    <div class="container">
-      <h1 class="display-4">Welcome to E-Shop</h1>
-      <p class="lead">Discover premium products for your business and lifestyle</p>
-    </div>
-  </header>
-
-  <!-- PRODUCTS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Featured Products</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product1" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-              <h5 class="card-title">Elegant Chair</h5>
-              <p class="card-text">$99.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
+<!-- PRODUCTS -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="custom-h1-our-products text-center mb-4">Our Products</h1>
+    <div class="container product-grid mt-5">
+  <div class="row">
+    
+    <!-- Card 1 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/minimalist.jpg" class="card-img-top" alt="Minimalist Furniture">
         </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product2" class="card-img-top" alt="Product 2">
-            <div class="card-body">
-              <h5 class="card-title">Smart Lamp</h5>
-              <p class="card-text">$49.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product3" class="card-img-top" alt="Product 3">
-            <div class="card-body">
-              <h5 class="card-title">Modern Desk</h5>
-              <p class="card-text">$199.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Minimalist</h5>
+          <p class="card-text">Sleek and clutter-free furniture with clean lines.</p>
+           <a href="cart.html" class="btn btn-primary w-100">Add to Cart</a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 E-Shop | Designed for demo purposes</p>
-  </footer>
+    <!-- Card 2 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/vintage.jpg" class="card-img-top" alt="Vintage Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Vintage</h5>
+          <p class="card-text">Classic pieces with a timeless and nostalgic charm.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Card 3 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/modern.jpg" class="card-img-top" alt="Modern Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Modern</h5>
+          <p class="card-text">Stylish furniture with innovative and functional design.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/rustic.jpg" class="card-img-top" alt="Rustic Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rustic</h5>
+          <p class="card-text">Warm, natural furniture made with wood and earthy textures.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/minimalist.jpg" class="card-img-top" alt="Minimalist Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Minimalist</h5>
+          <p class="card-text">Sleek and clutter-free furniture with clean lines.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/vintage.jpg" class="card-img-top" alt="Vintage Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Vintage</h5>
+          <p class="card-text">Classic pieces with a timeless and nostalgic charm.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/modern.jpg" class="card-img-top" alt="Modern Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Modern</h5>
+          <p class="card-text">Stylish furniture with innovative and functional design.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-img-container">
+          <img src="images/rustic.jpg" class="card-img-top" alt="Rustic Furniture">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rustic</h5>
+          <p class="card-text">Warm, natural furniture made with wood and earthy textures.</p>
+           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="custom-footer text-center py-3">
+  <p class="mb-0">© 2025 Furniture | Designed for demo purposes</p>
+</footer>
+
+<script src="./dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>

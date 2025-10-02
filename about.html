@@ -3,83 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop - Bootstrap</title>
-
-  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <title>Kahoy - About</title>
+  <link rel="icon" type="image/x-icon" href="images/kahoy.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link href="./dist/styles.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">E-Shop</a>
-      <button class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
-        </ul>
+<!-- NAVBAR -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white-custom" href="bootstrap.html">
+      <img src="images/kahoy.png" alt="Kahoy Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-links">
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="text-center text-white" style="background:url('#') center/cover no-repeat; height:100px;">
+  <div class="container">
+    <h1 class="custom-h1-about text-center mb-4"></h1>
+
+  </div>
+</header>
+
+<!-- OUR STORY -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <img src="images/workshop1.jpg" alt="Our Workshop" class="img-fluid rounded shadow">
+      </div>
+      <!-- Text -->
+      <div class="col-lg-6">
+        <h2 class="custom-h1-featured">Our Story</h2>
+        <p>Kahoy began with a passion for timeless craftsmanship. We believe that furniture is not just functional, but an art form that transforms living spaces. Every piece we make reflects a balance of heritage woodwork and modern aesthetics.</p>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <header class="text-center text-white py-5 bg-dark" style="background:url('https://picsum.photos/1200/400?business') center/cover no-repeat;">
-    <div class="container">
-      <h1 class="display-4">Welcome to E-Shop</h1>
-      <p class="lead">Discover premium products for your business and lifestyle</p>
-    </div>
-  </header>
-
-  <!-- PRODUCTS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Featured Products</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product1" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-              <h5 class="card-title">Elegant Chair</h5>
-              <p class="card-text">$99.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product2" class="card-img-top" alt="Product 2">
-            <div class="card-body">
-              <h5 class="card-title">Smart Lamp</h5>
-              <p class="card-text">$49.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/300/200?product3" class="card-img-top" alt="Product 3">
-            <div class="card-body">
-              <h5 class="card-title">Modern Desk</h5>
-              <p class="card-text">$199.00</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
+<!-- MISSION & VISION -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="custom-h1-featured">Our Purpose</h2>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Mission</h4>
+        <p>To design and deliver premium furniture that combines quality, comfort, and sustainability.</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Vision</h4>
+        <p>To inspire modern and timeless spaces by being a trusted name in sustainable furniture.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 E-Shop | Designed for demo purposes</p>
-  </footer>
+<!-- VALUES -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h2 class="custom-h1-featured">Our Craft</h2>
+        <p>We work with carefully sourced wood and sustainable materials, blending durability with elegant designs. From minimalist to vintage, every collection is designed to suit diverse lifestyles and spaces.</p>
+      </div>
+      <!-- Image -->
+      <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+        <img src="images/craft.jpg" alt="Our Craft" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer class="custom-footer text-center py-3">
+  <p class="mb-0">© 2025 Kahoy Furniture | Designed for demo purposes</p>
+</footer>
+
+<!-- scripts -->
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("mainNavbar");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+      // scrolling down
+      navbar.classList.add("navbar-hidden");
+    } else {
+      // scrolling up
+      navbar.classList.remove("navbar-hidden");
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+<script src="./dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
