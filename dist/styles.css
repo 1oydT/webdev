@@ -1359,6 +1359,7 @@ NAVBAR
 }
 .custom-navbar {
   background-color: #11120d;
+  
 }
 .navbar .nav-link {
   position: relative;
@@ -1403,6 +1404,24 @@ HEADINGS
 .custom-h1-about,
 .custom-h1-featured,
 .custom-h1-our-products { color: #4f463d; }
+/* ========================
+   CUSTOM BUTTONS
+======================== */
+.btn {
+  background-color: #c19a6b;   /* your custom color */
+  border: none;
+  color: #fff;                 /* text color */
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #a87e4f;   /* darker shade for hover */
+  transform: translateY(-2px);
+}
+.btn:active {
+  background-color: #8b673f;   /* even darker for active */
+  transform: translateY(0);
+}
 /*========================
 PRODUCT GRID + CARDS
 ========================*/
@@ -1444,6 +1463,26 @@ PRODUCT GRID + CARDS
 }
 .card {
   margin-bottom: 40px;
+}
+/* ========================
+   Button call out colors
+======================== */
+.btn-primary {
+  background-color: #c19a6b;   /* kahoy brown */
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #a87e4f;   /* darker shade */
+  transform: translateY(-2px);
+}
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #8b673f;   /* pressed shade */
+  transform: translateY(0);
+  box-shadow: none;
 }
 /*========================
 FOOTER

@@ -3,161 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kahoy - Products</title>
+  <title>Kahoy - Contact</title>
+  <link rel="icon" type="image/x-icon" href="images/kahoy.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link href="./dist/styles.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg custom-navbar">
+<nav id="mainNavbar" class="navbar navbar-expand-lg custom-navbar fixed-top">
   <div class="container">
     <a class="navbar-brand text-white-custom" href="bootstrap.html">
       <img src="images/kahoy.png" alt="Kahoy Logo" width="50" height="50" class="d-inline-block align-text-top">
     </a>
-    <button class="navbar-toggler" type="button">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white-custom" href="bootstrap.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white-custom" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link text-white-custom" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link text-white-custom active" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-white-custom" href="cart.html">🛒 Cart</a></li>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-links">
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
       </ul>
     </div>
-  </div>  
+  </div>
 </nav>
 
-<!-- PRODUCTS -->
+<!-- HERO -->
+<header class="text-center text-white" style="background:url('images/contact-bg.jpg') center/cover no-repeat; height:100px;">
+  <div class="container">
+    <h1 class="custom-h1-about text-center mb-4">Contact Us</h1>
+  </div>
+</header>
+
+<!-- CONTACT INFO + FORM -->
 <section class="py-5">
   <div class="container">
-    <h1 class="custom-h1-our-products text-center mb-4">Our Products</h1>
-    <div class="container product-grid mt-5">
-  <div class="row">
-    
-    <!-- Card 1 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/minimalist.jpg" class="card-img-top" alt="Minimalist Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Minimalist</h5>
-          <p class="card-text">Sleek and clutter-free furniture with clean lines.</p>
-           <a href="cart.html" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
+    <div class="row align-items-center">
+      <!-- Contact Info -->
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <h2 class="custom-h1-featured">Get in Touch</h2>
+        <p>Reach out to us for product inquiries, bulk orders, or collaborations.</p>
+        <ul class="list-unstyled">
+          <li><strong>📍 Address:</strong> Km 30 National Road, Tunasan, Muntinlupa City</li>
+          <li><strong>📞 Phone:</strong> +63 12345667</li>
+          <li><strong>✉️ Email:</strong> support@kahoy.com</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/vintage.jpg" class="card-img-top" alt="Vintage Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Vintage</h5>
-          <p class="card-text">Classic pieces with a timeless and nostalgic charm.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/modern.jpg" class="card-img-top" alt="Modern Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Modern</h5>
-          <p class="card-text">Stylish furniture with innovative and functional design.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/rustic.jpg" class="card-img-top" alt="Rustic Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Rustic</h5>
-          <p class="card-text">Warm, natural furniture made with wood and earthy textures.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/minimalist.jpg" class="card-img-top" alt="Minimalist Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Minimalist</h5>
-          <p class="card-text">Sleek and clutter-free furniture with clean lines.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/vintage.jpg" class="card-img-top" alt="Vintage Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Vintage</h5>
-          <p class="card-text">Classic pieces with a timeless and nostalgic charm.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/modern.jpg" class="card-img-top" alt="Modern Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Modern</h5>
-          <p class="card-text">Stylish furniture with innovative and functional design.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="col-md-3">
-      <div class="card shadow-sm">
-        <div class="card-img-container">
-          <img src="images/rustic.jpg" class="card-img-top" alt="Rustic Furniture">
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Rustic</h5>
-          <p class="card-text">Warm, natural furniture made with wood and earthy textures.</p>
-           <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-
   </div>
-  </div>
+</section>
+
+<!-- MAP kasi pasikat ako -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="custom-h1-featured">Find Us Here</h2>
+    <div class="mt-4">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.2264090569184!2d121.04127847586574!3d14.387114985794609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d13dd22b53f1%3A0xa7e25337e0c56e6!2sTunasan%2C%20Muntinlupa%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1708351234567"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="custom-footer text-center py-3">
-  <p class="mb-0">© 2025 Furniture | Designed for demo purposes</p>
+  <p class="mb-0">© 2025 Kahoy Furniture | Designed for demo purposes</p>
 </footer>
+
+<!-- scripts -->
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("mainNavbar");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.add("navbar-hidden");
+    } else {
+      navbar.classList.remove("navbar-hidden");
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
 
 <script src="./dist/bootstrap.bundle.min.js"></script>
 </body>
