@@ -1319,7 +1319,7 @@ header {
   overflow: hidden;
   text-align: center;
 }
-/* Background animation on a pseudo-element */
+/* Background animation*/
 header::before {
   content: "";
   position: absolute;
@@ -1342,11 +1342,11 @@ header::before {
     filter: blur(5px);
   }
 }
-/* Ensure text appears above background */
+/* Tintaaas yugn text para hindi mag blur*/
 header .container {
   position: relative;
   z-index: 1;
-  top: 220px; /* adjust vertical alignment */
+  top: 220px; /* vertical alignment */
 }
 /*========================
 NAVBAR
